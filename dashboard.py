@@ -25,7 +25,7 @@ st.title("Traffic Accident Severity Prediction Dashboard")
 m = folium.Map(location=[39.8283, -98.5795], zoom_start=4)
 
 # Use st_folium to render the map and capture clicks
-st.subheader("Click on the Map to Set Start and End Coordinates")
+st.subheader("Click on the Map Twice to Set a Start Location and End Location. Scroll Down and Hit Predict to Get the Model Predictions")
 map_data = st_folium(m, width=700, height=500)
 
 # Initialize session state variables
